@@ -41,7 +41,7 @@ namespace ConsoleApplication1
         {
             string key = "PUT YOUR KEY HERE";
             string email = "emailtoverify@example.com";
-            string sURL = "https://app.emaillistverify.com/api/verifEmail?secret=" + key + "&email=" + email;
+            string sURL = "https://apps.emaillistverify.com/api/verifEmail?secret=" + key + "&email=" + email;
             WebRequest wrGETURL;
             wrGETURL = WebRequest.Create(sURL);
 
@@ -73,7 +73,7 @@ namespace ConsoleApplication1
         private static void CheckFileStatus(string id)
         {
             string key = "PUT YOUR KEY HERE";
-            string sURL = "https://app.emaillistverify.com/api/getApiFileInfo?secret=" + key + "&id=" + id;
+            string sURL = "https://apps.emaillistverify.com/api/getApiFileInfo?secret=" + key + "&id=" + id;
             WebRequest wrGETURL;
             wrGETURL = WebRequest.Create(sURL);
 
@@ -113,7 +113,7 @@ namespace ConsoleApplication1
             string key = "PUT YOUR KEY HERE";
             
             string file_contents = "c:\\php\\emails.txt";
-            string url = "https://app.emaillistverify.com/api/verifApiFile?secret=" + key + "&filename=my_emails.txt";            
+            string url = "https://apps.emaillistverify.com/api/verifApiFile?secret=" + key + "&filename=my_emails.txt";            
             
             string boundary = "----------------------------" + DateTime.Now.Ticks.ToString("x");
 
